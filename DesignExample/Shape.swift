@@ -7,14 +7,26 @@
 
 import SwiftUI
 
-struct Shape: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct CShapeLeft: Shape {
+    func path(in rect: CGRect) -> Path {
+        return Path { path in
+            path.move(to: CGPoint(x: rect.width, y: 100))
+            path.addLine(to: CGPoint(x: rect.width, y: rect.height))
+            path.addLine(to: CGPoint(x: 0, y: rect.height))
+            path.addLine(to: CGPoint(x: 0, y: 0))
+            
+        }
     }
 }
 
-struct Shape_Previews: PreviewProvider {
-    static var previews: some View {
-        Shape()
+struct CShapeRight: Shape {
+    func path(in rect: CGRect) -> Path {
+        return Path { path in
+            path.move(to: CGPoint(x: 0, y: 100))
+            path.addLine(to: CGPoint(x: 0, y: rect.height))
+            path.addLine(to: CGPoint(x: rect.width, y: rect.height))
+            path.addLine(to: CGPoint(x: rect.width, y: 0))
+            
+        }
     }
 }

@@ -24,15 +24,15 @@ struct Login: View {
                             .fontWeight(.bold)
                         Capsule()
                             .fill(self.index == 0 ? Color.blue : Color.clear)
-                            .frame(width: 10, height: 5)
+                            .frame(width: 100, height: 5)
                     }
                     Spacer()
                 }.padding(.top, 30)
                 
                 VStack {
                     HStack(spacing: 15) {
-                        Image(systemName: "envelop.fill")
-                            .foregroundColor(Color("ColorOne"))
+                        Image(systemName: "envelope.fill")
+                            .foregroundColor(Color("AccentColor"))
                         TextField("Email Address", text: self.$email)
                     }
                     Divider()
@@ -43,7 +43,7 @@ struct Login: View {
                 VStack {
                     HStack(spacing: 15) {
                         Image(systemName: "eye.slash.fill")
-                            .foregroundColor(Color("ColorOne"))
+                            .foregroundColor(Color("AccentColor"))
                         SecureField("Password", text: self.$pass)
                     }
                     Divider()
@@ -72,7 +72,6 @@ struct Login: View {
                     self.index = 0
                 }
                 .cornerRadius(35)
-                .padding(20)
             
             Button(action: {
                 //
@@ -83,9 +82,9 @@ struct Login: View {
                     .padding(.vertical)
                     .padding(.horizontal, 50)
                     .background(Capsule())
-                    .shadow(color: .white.opacity(0.1), radius: 5, x: 0, y: 5)
+                    .shadow(color: .white.opacity(0.1), radius: 5, x: 0, y: -5)
             }
-            .offset(y: 35)
+            .offset(y: 25)
             .opacity(self.index == 0 ? 1 : 0)
         }
     }

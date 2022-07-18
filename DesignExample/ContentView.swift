@@ -20,7 +20,10 @@ struct ContentView: View {
                     .frame(width: 70, height: 25)
                 
                 ZStack {
-                    Text("Hey")
+                    
+                    SingUp(index: self.$index)
+                        .zIndex(Double(self.index))
+                    Login(index: self.$index)
                 }
                 
                 HStack(spacing: 15) {

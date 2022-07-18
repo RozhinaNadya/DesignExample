@@ -24,7 +24,6 @@ struct SingUp: View {
                             .foregroundColor(self.index == 1 ? .white : .gray)
                             .font(.title)
                             .fontWeight(.bold)
-                        
                         Capsule()
                             .fill(self.index == 1 ? Color.blue : Color.clear)
                             .frame(width: 100, height: 5)
@@ -35,7 +34,7 @@ struct SingUp: View {
                 VStack {
                     HStack(spacing: 15) {
                         Image(systemName: "envelope.fill")
-                            .foregroundColor(Color("ColorOne"))
+                            .foregroundColor(Color("AccentColor"))
                         TextField("Email Address", text: self.$email)
                     }
                     Divider()
@@ -46,7 +45,7 @@ struct SingUp: View {
             VStack {
                 HStack(spacing: 15) {
                     Image(systemName: "eye.slash.fill")
-                        .foregroundColor(Color("ColorOne"))
+                        .foregroundColor(Color("AccentColor"))
                     SecureField("Password", text: self.$pass)
                 }
                 Divider()
@@ -57,7 +56,7 @@ struct SingUp: View {
             VStack {
                 HStack(spacing: 15) {
                     Image(systemName: "eye.slash.fill")
-                        .foregroundColor(Color("ColorOne"))
+                        .foregroundColor(Color("AccentColor"))
                     SecureField("Password", text: self.$repass)
                 }
                 Divider().background(Color.white.opacity(0.5))

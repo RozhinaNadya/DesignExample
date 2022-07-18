@@ -64,7 +64,7 @@ struct Login: View {
                     .padding(.top, 30)
             } .padding()
                 .padding(.bottom, 65)
-                .background(Color("ColorOne"))
+                .background(Color("ColorOne")) //2
                 .clipShape(CShapeLeft())
                 .contentShape(CShapeLeft())
                 .shadow(color: Color.black.opacity(0.3), radius: 5, x: 0, y: -5)
@@ -90,9 +90,4 @@ struct Login: View {
         }
     }
 }
-/*
-struct Login_Previews: PreviewProvider {
-    static var previews: some View {
-        Login()
-    }
-}*/
+

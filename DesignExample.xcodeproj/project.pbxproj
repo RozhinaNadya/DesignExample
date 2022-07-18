@@ -13,6 +13,7 @@
 		849C215F28855AAA009C89D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849C215E28855AAA009C89D7 /* Preview Assets.xcassets */; };
 		849C216628856D85009C89D7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C216528856D85009C89D7 /* Login.swift */; };
 		849C216828859770009C89D7 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C21672885976F009C89D7 /* Shape.swift */; };
+		849C216A288599BE009C89D7 /* SingUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C2169288599BE009C89D7 /* SingUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		849C215E28855AAA009C89D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		849C216528856D85009C89D7 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		849C21672885976F009C89D7 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		849C2169288599BE009C89D7 /* SingUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				849C215728855AA5009C89D7 /* DesignExampleApp.swift */,
 				849C215928855AA5009C89D7 /* ContentView.swift */,
 				849C216528856D85009C89D7 /* Login.swift */,
+				849C2169288599BE009C89D7 /* SingUp.swift */,
 				849C21672885976F009C89D7 /* Shape.swift */,
 				849C215B28855AAA009C89D7 /* Assets.xcassets */,
 				849C215D28855AAA009C89D7 /* Preview Content */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				849C216628856D85009C89D7 /* Login.swift in Sources */,
+				849C216A288599BE009C89D7 /* SingUp.swift in Sources */,
 				849C215A28855AA5009C89D7 /* ContentView.swift in Sources */,
 				849C215828855AA5009C89D7 /* DesignExampleApp.swift in Sources */,
 				849C216828859770009C89D7 /* Shape.swift in Sources */,
